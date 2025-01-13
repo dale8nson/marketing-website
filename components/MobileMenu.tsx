@@ -22,12 +22,13 @@ const MobileMenu = () => {
     setOpenAnim(gsap.to("#mobile-menu", { visibility: "visible", paused: true }))
     setUnblurAnim(gsap.fromTo(".logo", { filter: "blur(16px)" }, { filter: "blur(0px)", duration: 0.5 }))
     setCloseAnim(gsap.to("#mobile-menu", { visibility: "hidden", paused: true }))
+    gsap.set("#mobile-menu", {visibility:"hidden"})
   }, [])
 
   return (
     <>
       <HamburgerButton onClick={() => { openAnim?.restart(); unblurAnim?.restart() }} className="lg:hidden" />
-      <div id="mobile-menu" className="flex flex-col items-start justify-start pb-0 lg:hidden bg-white gap-y-10 pt-10 fixed top-0 left-0 z-10 h-screen w-screen content-between">
+      <div id="mobile-menu" className="flex invisible flex-col items-start justify-start pb-0 lg:hidden bg-white gap-y-10 pt-10 fixed top-0 left-0 z-10 h-screen w-screen content-between">
         <div className="px-6 flex flex-col gap-y-4 items-start justify-between w-full h-full">
           <div className="flex flex-row  items-center justify-between w-full">
             <Logo />
