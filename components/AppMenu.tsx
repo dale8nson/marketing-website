@@ -22,7 +22,7 @@ const AppMenu = () => {
       <div className="hidden lg:flex lg:flex-row gap-x-4 justify-center items-center w-1/5">
         <CTA className="inline-flex items-center justify-center whitespace-nowrap rounded-md font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 lg:rounded-lg border border-input bg-transparent shadow-sm hover:bg-accent hover:text-accent-foreground lg:shadow h-8 px-3 text-xs hover:border">Schedule Demo</CTA>
 
-        <CTA className="bg-[#ec5f0e] text-white">Sign Up in 2 Minutes</CTA>
+        <CTA className="bg-[#ec5f0e] text-white h-8">Sign Up in 2 Minutes</CTA>
       </div>
     </div>
   )

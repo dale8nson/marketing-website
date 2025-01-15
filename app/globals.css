@@ -2,3 +2,62 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  --orange: #ec5f0e;
+  --muted-foreground: hsl(24, 4.9%, 40%);
+}
+
+.bg-primary {
+  background-color: var(--orange);
+}
+
+.text-primary {
+  color: var(--orange);
+}
+
+.text-muted-foreground {
+  color: var(--muted-foreground);
+}
+
+@font-face {
+  font-family: manrope;
+  font-weight:200;
+  src: url("/fonts/Manrope-ExtraLight.woff2") formaT("woff2");
+}
+
+@font-face {
+  font-family: manrope;
+  font-weight:300;
+  src: url("/fonts/Manrope-Light.woff2") formaT("woff2");
+}
+
+@font-face {
+  font-family: manrope;
+  font-weight:400;
+  src: url("/fonts/Manrope-Regular.woff2") formaT("woff2");
+}
+
+@font-face {
+  font-family: manrope;
+  font-weight:500;
+  src: url("/fonts/Manrope-Medium.woff2") formaT("woff2");
+}
+
+@font-face {
+  font-family: manrope;
+  font-weight:600;
+  src: url("/fonts/Manrope-SemiBold.woff2") formaT("woff2");
+}
+
+@font-face {
+  font-family: manrope;
+  font-weight:700;
+  src: url("/fonts/Manrope-Bold.woff2") formaT("woff2");
+}
+
+@font-face {
+  font-family: manrope;
+  font-weight:900;
+  src: url("/fonts/Manrope-ExtraBold.woff2") formaT("woff2");
+}
+
