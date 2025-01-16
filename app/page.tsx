@@ -11,7 +11,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="w-full h-full flex flex-col justify-start items-center md:items-start md:w-11/12 md:mx-auto pb-10">
+    <main className="w-full h-full m-0 flex flex-col justify-start items-center md:items-start md:mx-auto pb-10 overflow-x-clip">
       <Hero />
       <div className="grid max-w-2xl grid-cols-1 lg:grid-cols-[2fr_5fr] gap-x-8 gap-y-16 mb-16 sm:gap-y-20 lg:mx-0 lg:max-w-none mt-56 md:w-full mx-auto">
         <div className="flex flex-col md:justify-start md:items-start items-center gap-y-4 w-10/12 md:w-11/12 mx-auto ">
@@ -53,57 +53,61 @@ export default function Home() {
           </ReviewCard>
         </ScrollingReviews>
       </div>
-      <div className="bg-[#1c1917] text-[#f5f5f4] grid grid-cols-4 w-full py-24 px-8 gap-y-14 gap-x-16">
-        <h2 className="text-3xl text-center font-bold col-span-4">Our clients are <span className="text-[#f36416]">featured in</span></h2>
-        <div className="col-span-2"><Image src="/forbes.svg" alt="forbes" width={175} height={53} /></div>
-        <div className="col-span-2"><Image src="/huffpost.svg" alt="huffpost" width={175} height={53} /></div>
-        <div className="col-span-2"><Image src="/feedspot.svg" alt="feedspot" width={175} height={53} /></div>
-        <div className="col-span-2"><Image src="/evolvepreneur.svg" alt="evolvepreneur" width={175} height={53} /></div>
-        <div className="col-span-2"><Image src="/legal500.svg" alt="the legal 500" width={175} height={53} /></div>
-        <div className="col-span-2"><Image src="/franchising.svg" alt="franchising.com" width={175} height={53} /></div>
+      <div className="bg-[#1c1917] text-[#f5f5f4] flex flex-col items-center justify-start w-full py-24 gap-y-14">
+        <h2 className="text-3xl md:text-4xl text-center font-bold col-span-4">Our clients are <span className="text-[#f36416]">featured in</span></h2>
+        <div className="grid grid-cols-4 md:flex md:flex-row md:items-center md:justify-evenly md:gap-x-8 px-8 gap-x-16 md:px-16 w-full">
+          <div className="col-span-2"><Image src="/forbes.svg" alt="forbes" width={175} height={53} /></div>
+          <div className="col-span-2"><Image src="/huffpost.svg" alt="huffpost" width={175} height={53} /></div>
+          <div className="col-span-2"><Image src="/feedspot.svg" alt="feedspot" width={175} height={53} /></div>
+          <div className="col-span-2"><Image src="/evolvepreneur.svg" alt="evolvepreneur" width={175} height={53} /></div>
+          <div className="col-span-2"><Image src="/legal500.svg" alt="the legal 500" width={175} height={53} /></div>
+          <div className="col-span-2"><Image src="/franchising.svg" alt="franchising.com" width={175} height={53} /></div>
+        </div>
       </div>
-      <div className="flex flex-col items-center justify-center w-10/12 relative py-16 m-4">
+      <div className="flex flex-col items-center justify-start w-10/12 relative py-16 m-4 md:mx-auto h-full">
         <GradientBg />
-        <div className="flex flex-col items-center justify-center bg-white rounded-3xl w-full shadow py-14 px-4 gap-8">
-          <div className="aspect-square p-0 rounded-3xl w-full h-full mb-8">
+        <div className="flex flex-col md:grid md:grid-cols-[1fr_2fr] items-center justify-center bg-white rounded-3xl w-full h-full shadow py-14 px-4 md:py-20 md:px-20 gap-8">
+          <div className="aspect-square p-0 flex flex-row items-center justify-center rounded-3xl w-full h-full">
             <Image className="rounded-3xl" src="/henry-ceo-of-smarcomms.avif" alt="henry the ceo" width={796} height={796} />
           </div>
-          <h2 className="font-bold text-3xl tracking-tighter">
-            Sign-up risk free in 2 minutes
-          </h2>
-          <p className="text-muted-foreground">Join the over 10,000 brands we've helped grow on social media and start saving 10 hours a week today.</p>
-          <ul className="flex flex-col gap-y-4 text-muted-foreground self-align-start self-justify-start pl-0 -ml-14 [&_li]:flex [&_li]:flex-row [&_li]:items-center [&_li]:justify-start [&_li]:pl-0 [&_li]:gap-x-3">
-            <li>
-              <Tick />
-              Handcrafted by humans
-            </li>
-            <li>
-              <Tick />
-              +10,000 Brands served
-            </li>
-            <li>
-              <Tick />
-              SEO Optimized
-            </li>
-            <li>
-              <Tick />
-              Keyword Research
-            </li>
-            <li>
-              <Tick />
-              24 hour customer support
-            </li>
-            <li>
-              <Tick />
-              Zero-Risk, Money-Back Guarantee
-            </li>
-          </ul>
-          <div className="flex flex-col gap-y-2 justify-center lg:items-start items-center w-full">
-            <CTA className="text-white bg-[#ec5f0e] tracking-wider font-light h-10 py-3 text-sm lg:w-1/4">Sign up in 2 Minutes</CTA>
-            <div className="flex flex-row justify-center items-center lg:justify-start gap-x-[0.125rem] text-[0.6rem] text-[#8e8986] w-full font-bold">
+          <div className="flex flex-col justify-start items-start gap-y-8 h-full w-full">
+            <h2 className="font-bold text-3xl tracking-tighter">
+              Sign-up risk free in 2 minutes
+            </h2>
+            <p className="text-muted-foreground text-lg tracking-wide">Join the over 10,000 brands we've helped grow on social media and start saving 10 hours a week today.</p>
+            <ul className="flex flex-col gap-y-4 text-muted-foreground tracking-wide self-align-start self-justify-start pl-0 md:ml-0 [&_li]:flex [&_li]:flex-row [&_li]:items-center [&_li]:justify-start [&_li]:pl-0 [&_li]:gap-x-3 md:grid md:grid-rows-3 md:grid-cols-2">
+              <li>
+                <Tick />
+                Handcrafted by humans
+              </li>
+              <li>
+                <Tick />
+                +10,000 Brands served
+              </li>
+              <li>
+                <Tick />
+                SEO Optimized
+              </li>
+              <li>
+                <Tick />
+                Keyword Research
+              </li>
+              <li>
+                <Tick />
+                24 hour customer support
+              </li>
+              <li>
+                <Tick />
+                Zero-Risk, Money-Back Guarantee
+              </li>
+            </ul>
+            <div className="flex flex-col gap-y-2 justify-center md:items-start md:justify-start min-[0px]:items-center w-full md:w-full">
+              <CTA className="text-white bg-[#ec5f0e] tracking-wider font-light h-10 py-3 text-sm md:w-1/4">Sign up in 2 Minutes</CTA>
+              <div className="flex flex-row justify-center items-center md:justify-start gap-x-[0.125rem] text-[0.6rem] text-[#8e8986] w-full font-bold">
                 <VerificationBadge />
                 Zero-Risk, Money-Back Guarantee
               </div>
+            </div>
           </div>
         </div>
       </div>

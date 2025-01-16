@@ -9,8 +9,8 @@ export const ReviewCard = ({children, rating, customer, date}:{children?: ReactN
         <blockquote className="text-[#7d7774] line-clamp-3">{children}</blockquote>
       </div>
       <div className="flex flex-col justify-center items-start border-[#fde0d0] border-t-[1.25px] mx-0 px-3">
-        <h3 className="text-[#1c1917] font-semibold text-sm">{customer}</h3>
-        <p className="text-muted-foreground text-sm">{date}</p>
+        <h3 className="text-black text-muted-foreground font-semibold text-sm">{customer}</h3>
+        <p className="text-muted-foreground text-xs">{date}</p>
       </div>
     </article>
   )
