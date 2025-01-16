@@ -12,7 +12,7 @@ import { YoutTubeIconGrey } from "./YoutTubeIconGrey"
 export const Footer = () => {
   return (
     <footer className="bg-[#0c0a09] text-stone-400 leading-6 text-lg min-[0px]:flex min-[0px]:flex-col min-[0px]:items-center min-[0px]:justify-start  md:grid md:grid-cols-6 md:grid-rows-1 md:gap-y-4 gap-y-8 gap-x-8 pt-16 pb-8 px-2 md:px-4 w-full h-full">
-      <div className="grid md:col-span-6 grid-cols-2 md:grid-cols-6 gap-y-8 gap-x-4 px-4">
+      <div className="grid md:col-span-6 grid-cols-2 md:grid-cols-6 min-[0px]:gap-y-8  gap-x-4 px-4">
         <div className="min-[0px]:col-span-2 min-[0px]:w-full min-[0px]:flex flex-col items-start md:gap-y-6 gap-y-8 w-full md:w-9/12 md:mx-auto">
           <Image src="/logo-dark.webp" width={256} height={44} alt="smarcomms logo" className="aspect-[256/44] w-[120px] h-[21px]" />
           <div className="flex flex-col justify-start items-center md:items-start w-full">
@@ -32,7 +32,7 @@ export const Footer = () => {
           </div>
         </div>
         <div className="grid min-[0px]:grid-cols-1 min-[0px]:col-span-1 md:col-span-2 flex-col min-[0px]:gap-y-12 space-y-8 pb-8 items-start justify-start md:grid md:grid-cols-2 md:gap-x-8">
-          <div className="flex flex-col items-start justify-start text-sm w-full space-y-4">
+          <div className="flex flex-col items-start justify-start text-sm w-full min-[0px]:space-y-4">
             <h2 className="font-bold text-[#d6d3d1] md:text-lg">Services</h2>
             <ul className="list-none space-y-4 w-full">
               <li><Link href="#">Social Media Management</Link></li>
@@ -46,8 +46,8 @@ export const Footer = () => {
               <li><Link href="#">White Label</Link></li>
             </ul>
           </div>
-          <div className="flex flex-col items-start justify-start text-sm w-full space-y-4">
-            <h2 className="font-bold text-[#d6d3d1]">Clients</h2>
+          <div className="flex flex-col items-start justify-start text-sm w-full space-y-4 md:h-full md:!mt-0 ">
+            <h2 className="font-bold text-[#d6d3d1] md:text-lg">Clients</h2>
             <ul className="list-none space-y-4 w-full">
               <li><Link href="#">Reviews</Link></li>
               <li><Link href="#">Example Social Media Posts</Link></li>
@@ -58,9 +58,9 @@ export const Footer = () => {
             </ul>
           </div>
         </div>
-        <div className="min-[0px]:col-span-1 flex flex-col gap-y-12 items-start justify-start md:col-span-2 md:grid md:grid-cols-2">
+        <div className="min-[0px]:col-span-1 flex flex-col gap-y-12 items-start justify-start md:grid md:grid-cols-2 md:col-span-2">
           <div className="flex flex-col items-start justify-start text-sm w-full space-y-4">
-            <h2 className="font-bold text-[#d6d3d1]">Resources</h2>
+            <h2 className="font-bold text-[#d6d3d1] md:text-lg">Resources</h2>
             <ul className="list-none space-y-4 w-full">
               <li><Link href="#">Contact Us</Link></li>
               <li><Link href="#">24 Hour Support</Link></li>
@@ -70,7 +70,7 @@ export const Footer = () => {
             </ul>
           </div>
           <div className="flex flex-col items-start justify-start text-sm w-full space-y-4">
-            <h2 className="font-bold text-[#d6d3d1]">Legal</h2>
+            <h2 className="font-bold text-[#d6d3d1] md:text-lg">Legal</h2>
             <ul className="list-none space-y-4 w-full">
               <li><Link href="#">100% Delight Guarantee</Link></li>
               <li><Link href="#">Privacy Policy</Link></li>
@@ -78,7 +78,7 @@ export const Footer = () => {
             </ul>
           </div>
         </div>
-        <div className=" col-span-2 flex flex-col justify-start items-start gap-y-8">
+        <div className="col-span-2 md:col-span-6 flex flex-col justify-start items-start gap-y-8">
           <hr className="border-[#3b1c0b] border-solid w-full col-span-2" />
           <p className="col-span-2 text-xs">© {new Date().getFullYear()} Smarcomms Services, LLP. All Rights Reserved.</p>
         </div>
