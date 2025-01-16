@@ -19,7 +19,7 @@ const Hero = () => {
     <>
       <section className="relative overflow-x-clip overflow-y-visible md:overflow-x-clip md:overflow-y-visible w-full h-full flex flex-row justify-center items-center">
         <GradientBg />
-        <div className="relative z-20 grid grid-cols-1 md:grid-cols-[45fr_35fr] gap-6 md:gap-4 md:px-8 pb-8 h-full w-full md:translate-y-32 md:w-full overflow-y-visible">
+        <div className="relative z-20 grid grid-cols-1 md:grid-cols-[45fr_35fr] gap-6 md:gap-4 md:px-8 pb-8 h-full w-full  md:w-full overflow-y-visible">
           <div className="flex flex-col justify-center items-start gap-6 h-full w-full pl-6">
           <div className="flex flex-col items-start px-6 justify-start gap-y-8 w-full">
             <div className="flex md:justify-start flex-row justify-center  items-center gap-x-4 pt-40 w-full">
@@ -66,15 +66,15 @@ const Hero = () => {
             </div>
           </div>
           <div className="relative flex flex-col justify-center items-start mx-0 w-full md:overflow-y-visible overflow-x-clip">
-            <div className="relative grid min-[0px]:grid-cols-2 md:grid-cols-3 mt-8 gap-4 overflow-y-visible overflow-x-clip min-[0px]:w-full pl-1 pr-6 h-full md:w-[108%]">
-              <div className="min-[0px]:hidden md:flex md:flex-col justify-center items-center md:translate-y-32 md:w-full">
+            <div className="relative grid min-[0px]:grid-cols-2 md:grid-cols-3 mt-8 gap-4 overflow-y-visible overflow-x-clip min-[0px]:w-full pl-1 pr-6 h-full md:w-[108%] md:translate-y-32">
+              <div className="min-[0px]:hidden md:flex md:flex-col justify-center items-center md:translate-y-24 md:w-full">
                 <SNSCard src="/example-social-media-post-for-pet-adoption.avif" likes="5.6K" uploads="769" />
               </div>
               <div className="flex flex-col gap-y-8 md:translate-y-32 overflow-x-clip overflow-y-visible md:py-32 md:px-0 h-full">
                 <SNSCard src="/example-social-media-post-for-speakers.avif" likes="2.5K" uploads="456" />
                 <SNSCard src="/example-social-media-post-for-sushi.avif" likes="900" uploads="117" />
               </div>
-              <div className="flex flex-col gap-y-8 translate-y-32  lg:translate-y-[0px]">
+              <div className="flex flex-col gap-y-8 translate-y-32">
                 <SNSCard src="/example-social-media-post-for-tech.avif" likes="1.44K" uploads="249" />
                 <SNSCard src="/hero-post-12.avif" likes="436" uploads="82" />
               </div>
