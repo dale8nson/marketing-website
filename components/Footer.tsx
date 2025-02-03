@@ -12,7 +12,7 @@ import { YoutTubeIconGrey } from "./YoutTubeIconGrey"
 export const Footer = () => {
   return (
     <footer className="bg-[#0c0a09] text-stone-400 leading-6 text-lg min-[0px]:flex min-[0px]:flex-col min-[0px]:items-center min-[0px]:justify-start  md:grid md:grid-cols-6 md:grid-rows-1 md:gap-y-4 gap-y-8 gap-x-8 pt-16 pb-8 px-2 md:px-4 w-full h-full">
-      <div className="grid md:col-span-6 grid-cols-2 md:grid-cols-6 min-[0px]:gap-y-8  gap-x-4 px-4">
+      <div className="grid md:col-span-6 grid-cols-2 md:grid-cols-6 min-[0px]:gap-y-8 gap-x-4 px-4 2xl:w-3/4 2xl:mx-auto">
         <div className="min-[0px]:col-span-2 min-[0px]:w-full min-[0px]:flex flex-col items-start md:gap-y-6 gap-y-8 w-full md:w-9/12 md:mx-auto">
           <Image src="/logo-dark.webp" width={256} height={44} alt="smarcomms logo" className="aspect-[256/44] w-[120px] h-[21px]" />
           <div className="flex flex-col justify-start items-center md:items-start w-full">

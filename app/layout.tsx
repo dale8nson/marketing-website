@@ -16,8 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`bg-[#fafaf9] min-h-screen min-w-screen font-[manrope] `}
-      >
+        className={`bg-[#fafaf9] min-h-screen w-screen relative font-[manrope] `}>
         <AppBar />
         {children}
         <Footer/>

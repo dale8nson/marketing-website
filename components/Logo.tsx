@@ -11,7 +11,7 @@ const Logo = () => {
 
 
   return (
-    <Image className="logo w-32 h-6 blur-lg" src="/logo-light.png" width="600" height="102" alt="smarcomms logo" />
+    <Image className="logo w-32 h-6 blur-lg z-20" src="/logo-light.png" width="600" height="102" alt="smarcomms logo" />
   )
 }
 export { Logo }

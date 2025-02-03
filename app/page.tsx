@@ -3,7 +3,6 @@ import { GradientBg } from "@/components/GradientBg";
 import { Hero } from "@/components/Hero";
 import { ReviewCard } from "@/components/ReviewCard";
 import { ScrollingReviews } from "@/components/ScrollingReviews";
-import { SNSCard } from "@/components/SNSCard";
 import { Tick } from "@/components/Tick";
 import { VerificationBadge } from "@/components/VerificationBadge";
 import Image from "next/image";
@@ -13,10 +12,10 @@ export default function Home() {
   return (
     <main className="w-full h-full m-0 flex flex-col justify-start items-center md:items-start md:mx-auto pb-10 overflow-x-clip">
       <Hero />
-      <div className="grid max-w-2xl grid-cols-1 lg:grid-cols-[2fr_5fr] gap-x-8 gap-y-16 mb-16 sm:gap-y-20 lg:mx-0 lg:max-w-none mt-56 md:w-full mx-auto">
+      <div className="grid max-w-2xl grid-cols-1 lg:grid-cols-[2fr_5fr] gap-x-8 gap-y-16 mb-16 sm:gap-y-20 lg:mx-0 lg:max-w-none mt-56 md:w-full mx-auto 2xl:w-3/5">
         <div className="flex flex-col md:justify-start md:items-start items-center gap-y-4 w-10/12 md:w-11/12 mx-auto ">
           <p className="text-primary text-center leading-7 tracking-widest font-bold text-xs">OVER 175+ 5-STAR REVIEWS</p>
-          <h2 className="text-3xl font-semibold text-center md:text-left md:text-4xl tracking-tight">We've served more than 10,000 businesses since 2016</h2>
+          <h2 className="text-3xl 2xl:text-[1.8rem] font-semibold text-center md:text-left md:text-4xl tracking-tight">We've served more than 10,000 businesses since 2016</h2>
           <p className="text-muted-foreground tracking-wide">More businesses trust us than anyone else. Here's what our clients have to say about us.</p>
           <Link className="inline-flex items-center justify-center whitespace-nowrap font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 lg:rounded-lg border border-input bg-transparent shadow-sm hover:bg-accent hover:text-accent-foreground lg:shadow h-8 px-3 text-xs rounded-lg hover:border" href="#">Read verified reviews</Link>
         </div>
@@ -66,7 +65,7 @@ export default function Home() {
       </div>
       <div className="flex flex-col items-center justify-start w-10/12 relative py-16 m-4 md:mx-auto h-full">
         <GradientBg />
-        <div className="flex flex-col md:grid md:grid-cols-[1fr_2fr] items-center justify-center bg-white rounded-3xl w-full h-full shadow py-14 px-4 md:py-20 md:px-20 gap-8">
+        <div className="flex flex-col md:grid md:grid-cols-[1fr_2fr] items-center justify-center bg-white rounded-3xl w-full 2xl:w-3/5 h-full shadow py-14 px-4 md:py-20 md:px-20 gap-8">
           <div className="aspect-square p-0 flex flex-row items-center justify-center rounded-3xl w-full h-full">
             <Image className="rounded-3xl" src="/henry-ceo-of-smarcomms.avif" alt="henry the ceo" width={796} height={796} />
           </div>
@@ -110,8 +109,8 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <GradientBg bottom right className="translate-x-[60rem] translate-y-[16rem]" />
       </div>
     </main>
-
   );
 }
