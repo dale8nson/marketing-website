@@ -12,15 +12,15 @@ const AppBar = () => {
   const portalRef = useRef<HTMLDivElement | null>(null)
 
   return (
-    <header className="fixed top-0 w-full h-[4rem] bg-white flex flex-col justify-between lg:justify-evenly items-center z-50 px-6 lg:px-24 shadow-[#dfdfde] drop-shadow-lg">
-      <div className="flex flex-row items-center justify-between lg:justify-evenly min-[0px]:w-full h-full 2xl:w-3/5">
+    <header className="fixed top-0 w-full h-[4rem] bg-white flex flex-col min-[0px]:justify-between lg:justify-evenly items-center z-50 px-6 lg:px-24 shadow-[#dfdfde] drop-shadow-lg">
+      <div className="flex flex-row items-center min-[0px]:justify-between justify-between lg:justify-evenly min-[0px]:w-full h-full 2xl:w-3/5">
         <Logo />
         <div className="flex flex-col justify-start items-center w-full h-full bg-white relative ">
-          <div className="flex flex-row justify-center items-center w-full h-full bg-white relative">
+          <div className="flex flex-row min-[0px]:justify-end  justify-center items-center w-full h-full bg-white relative">
             <MobileMenu />
             <div className="min-[0px]:hidden md:flex md:flex-row justify-center gap-x-4 items-center w-full">
               <Link className="whitespace-nowrap font-semibold text-sm leading-6 text-foreground hover:text-foreground/80 hover:text-[#514f4e]" href="#">Reviews</Link>
-              <Menu className="relative z-20 overflow-x-visible" portalRef={portalRef}>
+              <Menu className=" relative z-20 overflow-x-visible" portalRef={portalRef}>
                 <Menu.Button className="hover:text-[#514f4e]">
                   Social Media and Marketing Services
                 </Menu.Button>
@@ -61,7 +61,7 @@ const AppBar = () => {
 
         </div>
       </div>
-      <Menu.Portal className="w-full h-full" ref={portalRef} />
+      <Menu.Portal className="min-[0px]:hidden md:block w-full h-full" ref={portalRef} />
     </header>
   )
 

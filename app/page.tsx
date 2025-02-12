@@ -53,8 +53,8 @@ export default function Home() {
         </ScrollingReviews>
       </div>
       <div className="bg-[#1c1917] text-[#f5f5f4] flex flex-col items-center justify-start w-full py-24 gap-y-14">
-        <h2 className="text-3xl md:text-4xl text-center font-bold col-span-4">Our clients are <span className="text-[#f36416]">featured in</span></h2>
-        <div className="grid grid-cols-4 md:flex md:flex-row md:items-center md:justify-evenly md:gap-x-8 px-8 gap-x-16 md:px-16 w-full">
+        <h2 className="min-[0px]:mx-6 md:mx-0 min-[0px]:text-3xl text-3xl md:text-4xl text-center font-bold col-span-4">Our clients are <span className="text-[#f36416]">featured in</span></h2>
+        <div className="grid grid-cols-4 md:flex md:flex-row md:items-center md:justify-evenly min-[0px]:gap-y-8 md:gap-x-8 px-8 gap-x-16 md:px-16 w-full">
           <div className="col-span-2"><Image src="/forbes.svg" alt="forbes" width={175} height={53} /></div>
           <div className="col-span-2"><Image src="/huffpost.svg" alt="huffpost" width={175} height={53} /></div>
           <div className="col-span-2"><Image src="/feedspot.svg" alt="feedspot" width={175} height={53} /></div>
