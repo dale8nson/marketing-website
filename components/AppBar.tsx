@@ -18,7 +18,7 @@ const AppBar = () => {
         <div className="flex flex-col justify-center items-center w-full h-full bg-white relative ">
           <div className="flex flex-row min-[0px]:justify-end justify-center min-[0px]:items-center w-full h-full bg-white relative">
             <MobileMenu />
-            <div className="min-[0px]:hidden lg:flex lg:flex-row justify-center gap-x-4 items-center w-full">
+            <div className="min-[0px]:hidden lg:flex lg:flex-row justify-center gap-x-4 items-center w-full lg:h-16">
               <Link className="whitespace-nowrap font-semibold text-sm leading-6 text-foreground hover:text-foreground/80 hover:text-[#514f4e]" href="#">Reviews</Link>
               <Menu className=" relative z-20 overflow-x-visible" portalRef={portalRef}>
                 <Menu.Button className="hover:text-[#514f4e]">

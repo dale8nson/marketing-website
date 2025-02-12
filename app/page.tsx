@@ -12,10 +12,10 @@ export default function Home() {
   return (
     <main className="w-full h-full m-0 flex flex-col justify-start items-center md:items-start md:mx-auto pb-10 overflow-x-clip">
       <Hero />
-      <div className="grid max-w-2xl grid-cols-1 lg:grid-cols-[2fr_5fr] gap-x-8 gap-y-16 mb-16 sm:gap-y-20 lg:mx-0 lg:max-w-none mt-56 md:w-full mx-auto 2xl:w-3/5">
-        <div className="flex flex-col md:justify-start md:items-start items-center gap-y-4 w-10/12 md:w-11/12 mx-auto ">
-          <p className="text-primary text-center leading-7 tracking-widest font-bold text-xs">OVER 175+ 5-STAR REVIEWS</p>
-          <h2 className="text-3xl 2xl:text-[1.8rem] font-semibold text-center md:text-left md:text-4xl tracking-tight">We've served more than 10,000 businesses since 2016</h2>
+      <div className="grid max-w-2xl grid-cols-1 lg:grid-cols-[3fr_5fr] gap-x-8 gap-y-16 mb-16 sm:gap-y-20 lg:mx-0 lg:max-w-none mt-56 md:w-full mx-auto 2xl:w-3/5">
+        <div className="flex flex-col md:justify-start md:items-start items-center gap-y-4 w-10/12 md:w-11/12 mx-auto lg:w-full lg:ml-8 ">
+          <p className="text-primary min-[0px]:text-center leading-7 tracking-widest font-bold text-xs lg:text-left lg:w-full">OVER 175+ 5-STAR REVIEWS</p>
+          <h2 className="text-3xl 2xl:text-[1.8rem] font-semibold text-center md:text-left md:text-4xl lg:text-[1.75rem] tracking-tight">We've served more than 10,000 businesses since 2016</h2>
           <p className="text-muted-foreground tracking-wide">More businesses trust us than anyone else. Here's what our clients have to say about us.</p>
           <Link className="inline-flex items-center justify-center whitespace-nowrap font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 lg:rounded-lg border border-input bg-transparent shadow-sm hover:bg-accent hover:text-accent-foreground lg:shadow h-8 px-3 text-xs rounded-lg hover:border" href="#">Read verified reviews</Link>
         </div>
