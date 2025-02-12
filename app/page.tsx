@@ -65,9 +65,9 @@ export default function Home() {
       </div>
       <div className="flex flex-col items-center justify-start w-10/12 relative py-16 m-4 md:mx-auto h-full">
         <GradientBg />
-        <div className="flex flex-col md:grid md:grid-cols-[1fr_2fr] items-center justify-center bg-white rounded-3xl w-full 2xl:w-3/5 h-full shadow py-14 px-4 md:py-20 md:px-20 gap-8">
+        <div className="flex flex-col lg:grid lg:grid-cols-[1fr_2fr] items-center justify-center bg-white rounded-3xl w-full 2xl:w-3/5 h-full shadow py-14 px-4 lg:py-20 lg:px-20 gap-8">
           <div className="aspect-square p-0 flex flex-row items-center justify-center rounded-3xl w-full h-full">
-            <Image className="rounded-3xl" src="/henry-ceo-of-smarcomms.avif" alt="henry the ceo" width={796} height={796} />
+            <Image className="rounded-3xl md:w-10/12" src="/henry-ceo-of-smarcomms.avif" alt="henry the ceo" width={796} height={796} />
           </div>
           <div className="flex flex-col justify-start items-start gap-y-8 h-full w-full">
             <h2 className="font-bold text-3xl tracking-tighter">
